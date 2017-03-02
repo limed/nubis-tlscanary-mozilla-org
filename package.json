@@ -1,0 +1,8 @@
+{
+  "name": "nubis-tlscanary",
+  "version": "0.0.1",
+  "description": "TLS canary static site",
+  "lambci": {
+    "cmd": "pip install --user awscli && ./build.sh"
+  }
+}
