@@ -1,0 +1,10 @@
+version: 0.1
+
+phases:
+  build:
+    commands:
+      - git clone --depth 1 https://github.com/mwobensmith/ssl_compat
+
+  install:
+    commands:
+      - aws s3 sync ssl_compat/ s3://limed-test-stage-f4e52a2a49acbfe4 --delete --exclude "*.git/"
